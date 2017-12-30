@@ -8,7 +8,7 @@ class Result extends React.Component {
       .concat(this.props.icons.filter((elem, pos, arr) => {
         return arr.indexOf(elem) == pos
       })
-      .map(id => <img id="icon" src={`http://openweathermap.org/img/w/${id}.png`} alt="weather icon"/>))
+      .map(id => <img id="icon" src={`https://openweathermap.org/img/w/${id}.png`} alt="weather icon"/>))
     );
   }
 };
