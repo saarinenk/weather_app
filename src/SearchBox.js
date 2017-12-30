@@ -27,7 +27,7 @@ class SearchBox extends React.Component {
 
   createSearch() {
       var location = this.state.value;
-      var URL = 'http://api.openweathermap.org/data/2.5/weather?q=' + location + '&APPID=dea560842d3e852a682f3ea93448017a';
+      var URL = 'https://api.openweathermap.org/data/2.5/weather?q=' + location + '&APPID=dea560842d3e852a682f3ea93448017a';
       this.props.search(URL);
   }
 
