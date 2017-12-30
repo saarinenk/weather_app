@@ -44,7 +44,6 @@ class App extends React.Component {
       responseType: 'json'
     })
       .then(function(response) {
-        console.log(Object.keys(response.data))
         this.showWeather(response.data);
         this.cancelError();
       }.bind(this))
@@ -55,7 +54,6 @@ class App extends React.Component {
 
 
   render() {
-    console.log("state: " + this.state.weatherResults);
     if(this.state.noError) {
       return (
         <div>

@@ -3,7 +3,6 @@ import Result from './Result';
 
 class Results extends React.Component {
   render() {
-    console.log("props: " + this.props.weatherResults)
     if (!this.props.weatherResults.weather) return <div/>
     return (
       <div id="data">

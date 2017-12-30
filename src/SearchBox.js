@@ -15,7 +15,6 @@ class SearchBox extends React.Component {
   };
 
   handleEnter(event) {
-    console.log("jee")
     if(event.keyCode == 13){
       this.createSearch;
     }
